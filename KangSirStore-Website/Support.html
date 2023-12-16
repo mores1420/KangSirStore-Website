@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KangSirStore Support</title>
+    <style>
+        body {
+            background-image: url("image/IndexBackgroundImage/index1.jpg");
+            background-size: cover;
+        }
+        .container {
+            width: 100%;
+            background-color: #1a1919;
+            padding: 10px 0;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .TopTitle {
+            float: left;
+        }
+
+        .TopTitleK {
+            margin-left: 1000px;
+            float: right;
+        }
+
+        .index-ul {
+            list-style: none;
+            margin: 20px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            color: azure;
+            height: 50px;
+        }
+        #show p{
+            color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="index-ul">
+            <li>
+                <h2 class="TopTitle" onclick="Renovate()">KangSirStore</h2>
+            </li>
+            <p class="TopTitleK">
+                <li>您好，<a href="User.html"><span id="Username"></span></a></li>
+            </p>
+        </ul>
+    </div>
+    <div id="show">
+        <p>你好</p>
+        <p>欢迎使用KangSirStore</p>
+        <p>有什么我能帮助你的吗</p>
+    </div>
+    <div id="box">
+        <input id="inp" type="text">
+        <button id="btn">发送信息</button>
+    </div>
+</body>
+<script src="Src/Support.js"></script>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景详情</title>
+    <style>
+        .container {
+            width: 100%;
+            background-color: #1a1919;
+            padding: 10px 0;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .TopTitle {
+            float: left;
+        }
+
+        .TopTitleK {
+            margin-left: 1000px;
+            float: right;
+        }
+
+        .index-ul {
+            list-style: none;
+            margin: 20px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            color: azure;
+            height: 50px;
+        }
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #box {
+            width: 1200px;
+            height: 535px;
+            margin: 50px auto;
+            border: 1px solid black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #box img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+        #box img.show {
+            display: block;
+        }
+
+        #box ul {
+            width: 200px;
+            height: 20px;
+            position: absolute;
+            bottom: 50px;
+            left: 900px;
+        }
+
+        #box ul li {
+            width: 20px;
+            height: 20px;
+            background: #999;
+            list-style: none;
+            float: left;
+            margin-left: 10px;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 10px;
+        }
+
+        #box ul li.bg_red {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="index-ul">
+            <li>
+                <h2 class="TopTitle" onclick="Renovate()">KangSirStore</h2>
+            </li>
+            <p class="TopTitleK">
+                <li>您好，<a href="User.html"><span id="Username"></span></a></li>
+            </p>
+        </ul>
+    </div>
+    <div id="box">
+        <img src="image/IndexBackgroundImage/index1.jpg" alt="" class="show" />
+        <img src="image/IndexBackgroundImage/index2.jpg" alt="" />
+        <img src="image/IndexBackgroundImage/index3.jpg" alt="" />
+        <img src="image/IndexBackgroundImage/index4.jpg" alt="" />
+        <img src="image/IndexBackgroundImage/index5.jpg" alt="" />
+        <img src="image/IndexBackgroundImage/index6.jpg" alt="" />
+        <ul>
+            <li class="bg_red">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+    </div>
+</body>
+<script src="Src/showPic.js"></script>
+
+</html>

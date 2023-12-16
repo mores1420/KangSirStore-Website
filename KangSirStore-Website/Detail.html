@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>放大镜</title>
+</head>
+<style>
+    body {
+        background-image: url("image/IndexBackgroundImage/hello.jpg");
+        background-size: cover;
+    }
+
+    .container {
+        width: 100%;
+        background-color: #1a1919;
+        padding: 10px 0;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .TopTitle {
+        float: left;
+    }
+
+    .TopTitleK {
+        margin-left: 1000px;
+        float: right;
+    }
+
+    .index-ul {
+        list-style: none;
+        margin: 20px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        color: azure;
+        height: 50px;
+    }
+
+    #Support {
+        margin-left: 50px;
+    }
+
+    #small {
+        width: 310px;
+        height: 310px;
+        margin-top: 80px;
+        margin-left: 100px;
+        border: 1px solid red;
+        position: relative;
+        float: left;
+    }
+
+    #shadow {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(143, 135, 51);
+        opacity: .2;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+        cursor: move;
+    }
+
+    #cover {
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        cursor: move;
+    }
+
+    #big {
+        width: 310px;
+        height: 310px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid yellow;
+        display: none;
+    }
+
+    #big img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <ul class="index-ul">
+            <li>
+                <h2 class="TopTitle" onclick="Renovate()">KangSirStore</h2>
+            </li>
+            <p class="TopTitleK">
+                <li>欢迎，<a href="User.html"><span id="Username"></span></a></li>
+                <li><a href="Shop.html" id="Support">购物车</a></li>
+            </p>
+        </ul>
+    </div>
+
+    <div id="small">
+        <img class="smallImg" src="image/small.jpg">
+        <div id="shadow"></div>
+        <div id="cover"></div>
+    </div>
+    <div id="big">
+        <img class="bigImg" src="image/big.jpg">
+    </div>
+
+</body>
+<script src="Src/detail.js"></script>
+
+</html>
